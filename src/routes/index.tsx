@@ -1,8 +1,8 @@
-import { lazy } from 'react';
-import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { lazy } from 'react'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
 
-import PageLazyLoad from '@/components/PageLazyLoad';
-import PageNotFound from '@/components/PageNotFound';
+import PageLazyLoad from '@/components/PageLazyLoad'
+import PageNotFound from '@/components/PageNotFound'
 import {
   PATH_DASHBOARD,
   PATH_FUNNEL_MANAGEMENT,
@@ -10,16 +10,16 @@ import {
   PATH_SUPPLIER_MANAGEMENT_LIST,
   PATH_SUPPLIER_MANAGEMENT_REVIEW_APPROVALS,
   PATH_SUPPLIER_MANAGEMENT_CONFIGURATIONS,
-} from '@/constants/web-url';
-import DashboardLayout from '@/layouts/DashboardLayout';
+} from '@/constants/web-url'
+import DashboardLayout from '@/layouts/DashboardLayout'
 
 
-const Dashboard = lazy(() => import('./Dashboard'));
-const FunnelManagement = lazy(() => import('./FunnelManagement'));
-const SupplierDashboard = lazy(() => import('./SupplierManagement/Dashboard'));
-const SupplierList = lazy(() => import('./SupplierManagement/List'));
-const ReviewApprovals = lazy(() => import('./SupplierManagement/ReviewApprovals'));
-const Configurations = lazy(() => import('./SupplierManagement/Configurations'));
+const Dashboard = lazy(() => import('./Dashboard'))
+const FunnelManagement = lazy(() => import('./FunnelManagement'))
+const SupplierDashboard = lazy(() => import('./SupplierManagement/Dashboard'))
+const SupplierList = lazy(() => import('./SupplierManagement/List'))
+const ReviewApprovals = lazy(() => import('./SupplierManagement/ReviewApprovals'))
+const Configurations = lazy(() => import('./SupplierManagement/Configurations'))
 
 const routes = createBrowserRouter([
   {
@@ -39,6 +39,6 @@ const routes = createBrowserRouter([
     path: '*',
     element: <PageNotFound />,
   },
-]);
+])
 
-export default routes;
+export default routes

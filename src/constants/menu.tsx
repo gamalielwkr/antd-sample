@@ -2,7 +2,7 @@ import {
   AppstoreOutlined,
   ExportOutlined,
   TeamOutlined,
-} from '@ant-design/icons';
+} from '@ant-design/icons'
 
 import {
   PATH_DASHBOARD,
@@ -11,7 +11,7 @@ import {
   PATH_SUPPLIER_MANAGEMENT_CONFIGURATIONS,
   PATH_SUPPLIER_MANAGEMENT_LIST,
   PATH_SUPPLIER_MANAGEMENT_REVIEW_APPROVALS
-} from './web-url';
+} from './web-url'
 
 interface MenuItem {
   child?: MenuItem[]
@@ -62,6 +62,6 @@ const menu: MenuItem[] = [
     label: 'Funnel Management',
     path: PATH_FUNNEL_MANAGEMENT
   }
-];
+]
 
 export default menu
