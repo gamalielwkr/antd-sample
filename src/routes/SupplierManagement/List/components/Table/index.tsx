@@ -49,12 +49,12 @@ const DATA: IData[] = [
 const columns: TableProps<IData>['columns'] = [
   {
     title: '#',
-    render: (value, record, index) => index + 1,
+    render: (_, __, index) => index + 1,
   },
   {
     title: 'Name',
     dataIndex: 'id',
-    render: (value, record) => {
+    render: (_, record) => {
       return (
         <Space align="center">
           <div style={{ textAlign: 'center' }}>

@@ -31,7 +31,7 @@ const DATA: IData[] = [
 const columns: TableProps<IData>['columns'] = [
   {
     title: '#',
-    render: (value, record, index) => index + 1,
+    render: (_, __, index) => index + 1,
   },
   {
     title: 'Name',
