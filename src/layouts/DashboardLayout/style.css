@@ -1,0 +1,21 @@
+.dashboard-sider {
+  overflow: auto;
+  height: 100vh;
+  position: sticky;
+  inset-inline-start: 0;
+  top: 0;
+  bottom: 0;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+}
+
+.dashboard-logo-vertical {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 6px;
+}
+
+.ant-layout-footer {
+  padding: 8px 16px;
+}
